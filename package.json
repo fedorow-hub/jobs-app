@@ -6,7 +6,10 @@
     "dev": "next dev",
     "build": "next build",
     "start": "next start",
-    "lint": "next lint"
+    "lint": "next lint",
+    "prettier": "prettier \"**/*.+(json|ts|tsx)\"",
+    "format:check": "npm run prettier -- --check",
+    "format:fix": "npm run prettier -- --write"
   },
   "dependencies": {
     "react": "^18",
@@ -19,6 +22,9 @@
     "@types/react": "^18",
     "@types/react-dom": "^18",
     "eslint": "^8",
-    "eslint-config-next": "14.2.3"
+    "eslint-config-next": "14.2.3",
+    "@typescript-eslint/eslint-plugin": "^5.36.1",
+    "eslint-plugin-storybook": "^0.6.4",
+    "prettier": "^2.7.1"
   }
 }
